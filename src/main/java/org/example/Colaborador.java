@@ -9,6 +9,10 @@ public class Colaborador {
     private String cargo;
     protected String cpf;
 
+    public String fala(){
+        return "eu não sou um Adm";
+    }
+
     public String getCpf() {
         return cpf;
     }

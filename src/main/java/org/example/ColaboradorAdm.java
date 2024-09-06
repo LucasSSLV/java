@@ -1,8 +1,8 @@
 package org.example;
 
 public class ColaboradorAdm extends Colaborador {
-   private boolean Adm = false;
-   private String setor;
+    private boolean Adm = false;
+    private String setor;
 
     public boolean isAdm() {
         return Adm;
@@ -18,5 +18,11 @@ public class ColaboradorAdm extends Colaborador {
 
     public void setSetor(String setor) {
         this.setor = setor;
+    }
+
+    //aqui aplico Polimorfismo alterando o return do método fala()
+    @Override
+    public String fala() {
+        return "eu sou um Adm";
     }
 }
