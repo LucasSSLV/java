@@ -18,8 +18,9 @@ public class Main {
         bernardo.setSobrenome("feliciano cunha");
         bernardo.setSetor("vendas");
         bernardo.setDataDeNascimento("05-11-1986");
+        bernardo.setCpf("03315155-89");
 
         System.out.println("colaborador: " + lucas.getName() + " " + lucas.getSobrenome() + ", nascido em: " + lucas.getDataDeNascimento() + ", " + "executa o cargo de: " + lucas.getCargo() + ".");
-        System.out.println("colaborador: " + bernardo.getName() + " " + bernardo.getSobrenome() + ", nascido em : " + bernardo.getDataDeNascimento() + ", é responsável pelo setor de: " + bernardo.getSetor() + ".");
+        System.out.println("colaborador: " + bernardo.getName() + " " + bernardo.getSobrenome() + ", nascido em : " + bernardo.getDataDeNascimento() + ", portador do cpf: " + bernardo.getCpf() + " é responsável pelo setor de: " + bernardo.getSetor() + ".");
     }
 }
