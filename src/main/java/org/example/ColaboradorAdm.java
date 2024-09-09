@@ -22,7 +22,9 @@ public class ColaboradorAdm extends Colaborador {
 
     //aqui aplico Polimorfismo alterando o return do método fala()
     @Override
-    public String fala() {
-        return "eu sou um Adm";
+    public void fala() {
+        System.out.println("eu sou um Adm");
+        //aqui uso o  super para deixar claro que este método é da classe mãe
+        super.folga();
     }
 }

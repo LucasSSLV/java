@@ -12,7 +12,7 @@ public class Main {
         lucas.setSobrenome("santos da silva");
         lucas.setDataDeNascimento("07-01-1995");
         lucas.setCargo("vendedor");
-        System.out.println(lucas.fala());
+        lucas.fala();
 
         bernardo.setAdm(true);
         bernardo.setName("Bernardo");
@@ -20,7 +20,7 @@ public class Main {
         bernardo.setSetor("vendas");
         bernardo.setDataDeNascimento("05-11-1986");
         bernardo.setCpf("03315155-89");
-        System.out.println(bernardo.fala());
+        bernardo.fala();
 
         System.out.println("colaborador: " + lucas.getName() + " " + lucas.getSobrenome() + ", nascido em: " + lucas.getDataDeNascimento() + ", " + "executa o cargo de: " + lucas.getCargo() + ".");
         System.out.println("colaborador: " + bernardo.getName() + " " + bernardo.getSobrenome() + ", nascido em : " + bernardo.getDataDeNascimento() + ", portador do cpf: " + bernardo.getCpf() + " é responsável pelo setor de: " + bernardo.getSetor() + ".");
