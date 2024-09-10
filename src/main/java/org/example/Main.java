@@ -33,5 +33,21 @@ public class Main {
         System.out.println("colaborador: " + bernardo.getName() + " " + bernardo.getSobrenome() + ", nascido em : " + bernardo.getDataDeNascimento() + ", portador do cpf: " + bernardo.getCpf() + " é responsável pelo setor de: " + bernardo.getSetor() + ".");
         //abaixo chamo os métodos da interface Horarios, impletmentados pela subClasse ColaboradorAdm
         System.out.println("eu entro às: " + bernardo.entrada() + " e saio às " + bernardo.saida() + ".");
+
+        //intanciando uma subclasse de uma classe abstrata que extende outra classe abstrata
+        QuantumComputer pc01 = new QuantumComputer("27", 111.22) {
+            @Override
+            public void quantumComputation() {
+                System.out.println("nivel 1 de computação.");
+            }
+
+            @Override
+            public void bootUp() {
+                System.out.println("o pc irá iniciar em alguns minutos.");
+            }
+        };
+
+        pc01.quantumComputation();
+        pc01.bootUp();
     }
 }
