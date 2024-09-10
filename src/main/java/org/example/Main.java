@@ -31,5 +31,7 @@ public class Main {
 
         System.out.println("colaborador: " + lucas.getName() + " " + lucas.getSobrenome() + ", nascido em: " + lucas.getDataDeNascimento() + ", " + "executa o cargo de: " + lucas.getCargo() + ".");
         System.out.println("colaborador: " + bernardo.getName() + " " + bernardo.getSobrenome() + ", nascido em : " + bernardo.getDataDeNascimento() + ", portador do cpf: " + bernardo.getCpf() + " é responsável pelo setor de: " + bernardo.getSetor() + ".");
+        //abaixo chamo os métodos da interface Horarios, impletmentados pela subClasse ColaboradorAdm
+        System.out.println("eu entro às: " + bernardo.entrada() + " e saio às " + bernardo.saida() + ".");
     }
 }

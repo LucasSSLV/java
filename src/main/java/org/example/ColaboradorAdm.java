@@ -1,8 +1,20 @@
 package org.example;
 
-public class ColaboradorAdm extends Colaborador {
+public class ColaboradorAdm extends Colaborador implements Horarios {
     private boolean Adm = false;
     private String setor;
+
+    //abaixo faço a implementação dos método da interface
+    @Override
+    public String entrada() {
+        return "8:00";
+    }
+
+    //abaixo faço a implementação dos método da interface
+    @Override
+    public String saida() {
+        return "17:00";
+    }
 
     public boolean isAdm() {
         return Adm;
