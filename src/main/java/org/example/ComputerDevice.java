@@ -1,12 +1,15 @@
 package org.example;
 
-public abstract class ComputerDevice {
+public abstract class ComputerDevice implements FastCharge {
     String brand;
     double storageCapacity;
+    public static final boolean COM_BATERIA = true;
+    final String modeloDoProcessador;
 
-    public ComputerDevice(String brand, double storageCapacity) {
+    public ComputerDevice(String brand, double storageCapacity, String modeloDoProcessador) {
         this.brand = brand;
         this.storageCapacity = storageCapacity;
+        this.modeloDoProcessador = modeloDoProcessador;
     }
 
     public String getBrand() {
@@ -26,4 +29,13 @@ public abstract class ComputerDevice {
     }
 
     public abstract void bootUp();
+
+    public boolean modeloComBateria() {
+        return COM_BATERIA;
+    }
+
+    //declarando um método FINAL que não pode ser alterado
+    public final void desligar() {
+        System.out.println("Desligando...");
+    }
 }
